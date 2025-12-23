@@ -1,0 +1,7 @@
+version: STSv1
+mode: testing
+mx: mx.zoho.eu
+mx: mx2.zoho.eu
+mx: mx3.zoho.eu
+max_age: 86400
+
