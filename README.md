@@ -47,7 +47,11 @@ To enable MTA-STS for Care & Fly, the following DNS records must be configured:
 
 Replace `<UNIX_TIMESTAMP>` with the current Unix timestamp to ensure the policy is up-to-date.
 
-## How It Works
+## 🌐 Hosting with GitHub Pages
+
+The MTA-STS policy file is hosted using **GitHub Pages**, a static site hosting service provided by GitHub. This allows us to easily serve the `mta-sts.txt` file at the required path: `https://mta-sts.careandfly.eu/.well-known/mta-sts.txt`. The CNAME record `mta-sts.careandfly.eu` points to `careandfly.github.io`, where the file is hosted. GitHub Pages is chosen for its simplicity, reliability, and seamless integration with our GitHub repository.
+
+## ？How It Works
 
 1. **Policy Discovery**: When an email is sent to a Care & Fly domain, the sending mail server checks for the MTA-STS policy by querying the DNS TXT record at `_mta-sts.careandfly.eu`.
 
