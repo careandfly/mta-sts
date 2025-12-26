@@ -3,5 +3,5 @@ mode: enforce
 mx: mx.zoho.eu
 mx: mx2.zoho.eu
 mx: mx3.zoho.eu
-max_age: 604,800
+max_age: 604800
 
